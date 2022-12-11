@@ -1,50 +1,52 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
 public class RegexTest {
 
-    UserDetails userDetails = new UserDetails();
-
 
     @Test
-    public void testFistName() throws NullPointerException {
-        boolean result = userDetails.testFirstName(null);
-        assertTrue(result);
+    public void givenProperFirstName_returnTrue() {
+
+        UserDetails userDetails = new UserDetails();
+        assertTrue(userDetails.firstNameValidation("Alpha"));
     }
 
 
     @Test
-    public void testLastName() {
-        boolean result = userDetails.testLastName("Nishant");
-        assertTrue(result);
-    }
-    @Test
-    public void testLastNameFalse() {
-        boolean result = userDetails.testLastName("Singh");
-        assertFalse(result);
+    public void givenImproperFirstName_returnFalse() {
+
+        UserDetails userDetails = new UserDetails();
+        assertFalse(userDetails.firstNameValidation("alpha"));
     }
 
-
     @Test
-    public void testEmail() {
-        boolean result = userDetails.email("nishant.singh@bl.co.in");
-        assertTrue(result);
+    public void givenNullFirstName_returnFalseByNullPointerException() {
+
+        UserDetails userDetails = new UserDetails();
+        assertFalse(userDetails.firstNameValidation(null));
     }
 
-
     @Test
-    public void testMobile() {
-        boolean result = userDetails.mobile("91 6207142236");
-        assertTrue(result);
+    public void givenProperLastName_returnTrue() {
+
+        UserDetails userDetails = new UserDetails();
+        assertTrue(userDetails.lastNameValidation("Alpha"));
     }
 
+    @Test
+    public void givenImproperLastName_returnFalse() {
+
+        UserDetails userDetails = new UserDetails();
+        assertFalse(userDetails.lastNameValidation("alpha"));
+    }
 
     @Test
-    public void testPassword() {
-        boolean result = userDetails.password("Nishant12345");
-        assertTrue(result);
+    public void givenNullLastName_returnFalseByNullPointerException() {
+
+        UserDetails userDetails = new UserDetails();
+        assertFalse(userDetails.lastNameValidation(null));
     }
 }

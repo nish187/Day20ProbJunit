@@ -40,7 +40,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.RegexTest.testPassword">
+  <component name="RunManager" selected="Gradle.Emailtest">
     <configuration name="Emailtest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Emailtest" />
         <item itemvalue="Gradle.RegexTest.testPassword" />
         <item itemvalue="Gradle.Emailtest.givenEmailIds_withExpectedResult_shouldPassAllTheTestCases" />
         <item itemvalue="Gradle.RegexTest.testMobile" />
         <item itemvalue="Gradle.RegexTest.testEmail" />
-        <item itemvalue="Gradle.Emailtest" />
       </list>
     </recent_temporary>
   </component>
