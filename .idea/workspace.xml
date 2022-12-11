@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d0aff2cc-ed87-4c1f-8ce9-31458a212570" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Emailtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Emailtest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegexTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.RegexTest.testMobile">
+  <component name="RunManager" selected="Gradle.RegexTest.testPassword">
     <configuration name="Emailtest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -54,6 +55,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;Emailtest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Emailtest.givenEmailIds_withExpectedResult_shouldPassAllTheTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Emailtest.givenEmailIds_withExpectedResult_shouldPassAllTheTestCases[*]&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -109,8 +133,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RegexTest.testPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;RegexTest.testPassword&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegexTest.testPassword" />
+        <item itemvalue="Gradle.Emailtest.givenEmailIds_withExpectedResult_shouldPassAllTheTestCases" />
         <item itemvalue="Gradle.RegexTest.testMobile" />
         <item itemvalue="Gradle.RegexTest.testEmail" />
         <item itemvalue="Gradle.Emailtest" />

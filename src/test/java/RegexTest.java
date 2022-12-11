@@ -1,5 +1,7 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RegexTest {
@@ -8,16 +10,21 @@ public class RegexTest {
 
 
     @Test
-    public void testFistName() {
-        boolean result = userDetails.firstName("Nishant");
+    public void testFistName() throws NullPointerException {
+        boolean result = userDetails.testFirstName(null);
         assertTrue(result);
     }
 
 
     @Test
     public void testLastName() {
-        boolean result = userDetails.lastName("Singh");
+        boolean result = userDetails.testLastName("Nishant");
         assertTrue(result);
+    }
+    @Test
+    public void testLastNameFalse() {
+        boolean result = userDetails.testLastName("Singh");
+        assertFalse(result);
     }
 
 
